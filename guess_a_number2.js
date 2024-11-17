@@ -16,26 +16,26 @@ function askToUser (){
    }
 
  //fonction qui affiche la comparaison avec le nombre à deviner et le nombre de l'user
-function didIWin() {                                      //?????????????????OURQUOI pas de paramètre givenNumber?
-   /*   (etape 2)
+function didIWin() {                                      //?????????????????POURQUOI pas de paramètre givenNumber?
+
        switch (true){
         case (givenNumber===guessNumber):
-            alert ("bravo");
+            alert ("Bravo, tu as gagné");
             break;
         case (givenNumber > guessNumber):
-            alert ("plus petit");
+            alert ("Perdu, c'est plus petit, Rejoues! ");
             break;
         default:
-            alert ("plus grand");
+            alert ("Perdu, c'est plus grand, Rejoues");
 
-    } */
-   //etape 3
+    }}
+  /*  //etape 3
    while (givenNumber!=guessNumber){
     return alert ("Perdu! Rejoues!")
    }
    return alert ("Bravo! tu as gagné!!")
  
-        }
+        } */
 /* function didIWin(givenNumber){
 if (givenNumber == guessNumber) {
  alert("Bravo vous avez deviné le nombre");
