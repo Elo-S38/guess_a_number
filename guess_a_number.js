@@ -1,10 +1,4 @@
-let givenNumber
-
-
-
-
-
-
+// let givenNumber = 0
 
 
 // function askToUser (){
@@ -29,10 +23,10 @@ let givenNumber
 // }
 
 /////////////Etape 1////////////////////////////
-function askToUser (){      
-    return  prompt ("Please, choose a number");
-}
-//givenNumber =askToUser()
+// function askToUser (){      
+//     return  prompt ("Please, choose a number");
+// }
+// givenNumber =askToUser()
 
 //////////////Etape 2///////////////////////////
 /* function didIWin(givenNumber){
@@ -59,28 +53,28 @@ gamePlay() */
 // ///////////////Etape 3///////////////////
 
 
-function didIWin(givenNumber){
-    if (givenNumber==22){
-        return true
-    } else {
-        return false
-    }
+// function didIWin(givenNumber){
+//     if (givenNumber==22){
+//         return true
+//     } else {
+//         return false
+//     }
     
-}
+// }
  
-// didIWin(givenNumber)
-// alert (didIWin(givenNumber))
+// // didIWin(givenNumber)
+// // alert (didIWin(givenNumber))
 
 
-function gamePlay (){    
-    givenNumber=askToUser();
-   return didIWin(givenNumber)    
-}
+// function gamePlay (){    
+//     givenNumber=askToUser();
+//    return didIWin(givenNumber)    
+// }
 
-while(gamePlay()!= true){
-    alert (didIWin(givenNumber) + " : you loose, try again")
-}
-alert ("You Win")
+// while(gamePlay()!= true){
+//     alert (didIWin(givenNumber) + " : you loose, try again")
+// }
+// alert ("You Win")
 
 
 ////////////////////////////////////////////////
@@ -90,3 +84,40 @@ while(givenNumber != 22){
     givenNumber=askToUser();
 }
 alert ("You Win") */
+
+
+///////////////////Etape 4//////////////////////////////
+function givenNumber2 (){
+    return prompt ("Please choose a given number between 0 et 50 ")
+}
+
+while (givenNumber2() > 50){
+    givenNumber2()
+}
+
+function askToUser (){      
+    return  prompt ("Please, choose a number");
+    askToUser=parseInt(askToUser);
+}
+givenNumber =askToUser()
+
+function didIWin(){
+        if (givenNumber2!=givenNumber){
+            return false
+        } else {
+            return true
+        }
+    }  
+
+didIWin()
+alert (didIWin())
+
+// function gamePlay (){    
+//     givenNumber=askToUser();
+//    return didIWin(givenNumber)    
+// }
+
+// while(gamePlay()!= true){
+//     alert (didIWin(givenNumber) + " : you loose, try again")
+// }
+// alert ("You Win")
